@@ -10,28 +10,34 @@
 <body>
     <header class="m-0 p-0">
         <nav class="font-inter bg-[#1A0B2E] flex pt-10 pb-3 w-full border-b border-gray-500">
-            <div class=" text-3xl font-extrabold text-white ml-45 ">
+            <div class=" text-3xl font-extrabold text-white ml-40 ">
                 <h2>Tech<span class=" bg-gradient-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F]  bg-clip-text text-transparent">Wave</span></h2>
             </div>
 
            <div>
-             <ul class="text-white gap-20 flex ml-90 ">
+             <ul class="hidden md:flex text-white gap-20 flex ml-90">
                 <li>About</li>
                 <li>Episodes</li>
                 <li>Host</li>
             </ul>
            </div>
-            <button class="bg-gradient-to-bl from-[#9100F8] via-50% via-[#FB09B4] via-40% to-[#F7E93F] via-20%  rounded-full px-4 py-3 ml-80 text-white font-semibold">Subscribe</button>
+            <button class=" hidden md:block bg-gradient-to-bl from-[#9100F8] via-50% via-[#FB09B4] via-40% to-[#F7E93F] via-20%  rounded-full px-4 py-3 ml-80 text-white font-semibold cursor-pointer">Subscribe</button>
+
+            <!-- hamburger -->
+
+            <div class=" md:hidden ml-50 mt-4">
+                <img src="assets/hamburger-menu.png" alt="">
+            </div>
         </nav>
-<main class="font-inter">
+<hero class="font-inter">
     <section>
         
         <div class="relative">
-            <div>
+            <div class="absolute w-full ">
                 <img src="assets/hero-bg.png" alt="">
             </div>
-            <div class="absolute ml-154 top-20">
-                <img src="assets/hero-circle.png" alt="">
+            <div class="absolute ml-154 top-20 ">
+                <img src="assets/hero-circle.png" alt="" >
             </div>
             <div class="absolute top-43 ml-183">
                 <img src="assets/microphone.png" alt="">
@@ -39,10 +45,36 @@
             <div class="absolute top-0 rounded-3xl bg-green-500 px-5 py-1.5 ml-210 mt-20 font-bold">
                 <button>New</button>
             </div>
+
+
+               <!-- Banner description -->
+           <div class="absolute top-0">
+             <div class="ml-135 mt-120 ">
+                <h3 class=" text-6xl  font-extrabold text-white ml-30 ">TechWave</h3>
+                <div class="text-base font-light text-white ml-10 mt-5 ">
+                    <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                </div>
+
+            </div>
+          <div class="flex gap-0 p-0 justify-center ml-139 mt-5">
+              <div>
+                <button class="flex gap-3 bg-gradient-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F]  rounded-full px-4 py-3 text-white font-semibold">
+                    <img src="assets/spotify.png" alt="">
+                    <p>Listen on Spotify</p>
+                </button>
+            </div>
+            <div>
+                <button class="flex gap-3 rounded-full px-9 py-2.5 ml-3 text-white border-2 border-[#00FF88] font-semibold bg-none">
+                    <img src="assets/message.png" alt="">
+                    <p class="text-[#00ff88]">Subscribe</p>
+                </button>
+            </div>
+          </div>
+           </div>
             
         </div>
     </section>
-</main>
+</hero>
         
     
 
